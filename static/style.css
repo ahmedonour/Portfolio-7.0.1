@@ -1,0 +1,18 @@
+:root {
+	--ff-main: 'Melodrama', serif;
+	--ff-sec: 'Plaster', cursive;
+
+	/* Color */
+	--clr-White: #fff;
+	--clr-Black: #000;
+	--clr-SkyBlue: #CAF2FF;
+	--clr-Blue: #00b7d0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: var(--clr-SkyBlue);
+}
