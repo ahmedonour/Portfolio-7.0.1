@@ -1,11 +1,12 @@
 :root {
 	--ff-main: 'Melodrama', serif;
+	--ff-p: 'Clash Display', sans-serif;
 	--ff-sec: 'Plaster', cursive;
 
 	/* Color */
 	--clr-White: #fff;
 	--clr-Black: #000;
-	--clr-SkyBlue: #CAF2FF;
+	--clr-SkyBlue: #caf2ff;
 	--clr-Blue: #00b7d0;
 }
 * {

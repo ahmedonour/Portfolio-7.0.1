@@ -3,8 +3,11 @@
 	import HeroText from '../components/Home/HeroText.svelte';
 </script>
 
+<svelte:head>
+	<title>Ahmed Suliman | Front-End Developer & Designer</title>
+</svelte:head>
 <main>
-    <HeroText />
+	<HeroText />
 	<Circles />
 </main>
 
