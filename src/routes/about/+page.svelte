@@ -1,12 +1,16 @@
 <script>
+	import { fly } from "svelte/transition";
+	import UniText from "../../components/uni-text.svelte";
+	let Class = "about-section"
 </script>
 
 <svelte:head>
 	<title>Ahmed Suliman | About me</title>
 	<script src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
 </svelte:head>
-<main>
-	<div class="about_section">
+<main in:fly={{ y: 200, duration: 300, delay: 500 }}
+out:fly={{ y: 200, duration: 300, delay: 500 }}>
+	<!-- <div class="about_section">
 		<h1>About</h1>
 		<p>
 			As a front end developer, my goal is to create stunning and engaging websites that will
@@ -14,7 +18,15 @@
 			website design and development, I specialize in creating custom social media influencer
 			portfolios that showcase your brand and personality.
 		</p>
-	</div>
+	</div> -->
+	<UniText 
+	myClass='about-section'
+	myH1="About"
+	myP="As a front end developer, my goal is to create stunning and engaging websites that will
+	capture the attention of your audience and leave a lasting impression. With my expertise in
+	website design and development, I specialize in creating custom social media influencer
+	portfolios that showcase your brand and personality."
+	/>
 	<div class="me">
 		<h1>About Me</h1>
 		<div class="me_img">
@@ -47,22 +59,7 @@
 		display: grid;
 		place-items: center;
 	}
-	.about_section {
-		width: 78%;
-		font-family: var(--ff-main);
-		font-size: 3rem;
-	}
-	.about_section h1 {
-		font-size: 3rem;
-	}
-	.about_section p {
-		font-family: var(--ff-p);
-		font-weight: 500;
-		text-align: justify;
-		font-size: 1rem;
-		letter-spacing: 1px;
-		line-height: 1.5;
-	}
+
 	.me {
 		margin: 1rem;
 		width: 78%;
@@ -104,12 +101,7 @@
 		margin-left: 1rem;
 	}
 	@media screen and (min-width: 1024px) {
-		.about_section h1 {
-			font-size: 8rem;
-		}
-		.about_section p {
-			font-size: 2rem;
-		}
+
 		.me .me_img {
 			flex-direction: row;
 			justify-content: center;

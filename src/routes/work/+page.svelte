@@ -1,10 +1,16 @@
+<script>
+	import { fly } from "svelte/transition";
+	import UniText from "../../components/uni-text.svelte";
+</script>
 <svelte:head>
 	<title>Ahmed Suliman | My work</title>
 </svelte:head>
-<main>
-	<section>
-		<h1>Work</h1>
-	</section>
+<main in:fly={{ y: 200, duration: 500, delay: 300 }}
+out:fly={{ y: 200, duration: 500, delay: 300 }}>
+	<UniText
+	myH1="Work"
+	myP="This is Hand picked Projects"
+	/>
 </main>
 
 <style>
@@ -12,12 +18,5 @@
 		width: var(--width-Scroll);
 		display: grid;
 		place-items: center;
-	}
-	section {
-		width: 78%;
-	}
-	section h1 {
-		font-family: var(--ff-main);
-		font-size: 6rem;
 	}
 </style>
