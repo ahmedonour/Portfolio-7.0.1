@@ -13,7 +13,7 @@
 
 <style>
 	main {
-		width: 100vw;
+		width: var(--width-Scroll);
 		height: calc(100vh - 90px);
 		background-color: var(--clr-SkyBlue);
 		display: grid;

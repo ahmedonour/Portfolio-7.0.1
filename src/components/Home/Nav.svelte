@@ -1,7 +1,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	var visible = true;
+	var visible = false;
 	function toggleVisible() {
 		visible = !visible;
 	}
@@ -20,23 +20,31 @@
 				<rect y="60" width="100" height="20" rx="10" />
 			</svg>
 		</button>
-		{#if !visible}
-			<ul in:fly={{ x: 100, duration: 500 }} out:fly={{ x: -100, duration: 500 }}>
-				<button on:click={toggleVisible}><i class="fas fa-times" /></button>
-				<div class="left-side">
-					<li><a href="/" on:click={toggleVisible}>Home</a></li>
-					<li><a href="/about" on:click={toggleVisible}>About</a></li>
-					<li><a href="/work" on:click={toggleVisible}>Work</a></li>
-				</div>
-				<li><a href="mailto:ahmedonour.49@gmail.com" on:click={toggleVisible}>Let's Talk</a></li>
-			</ul>
-		{/if}
+
+		<ul
+			class:open={visible}
+			in:fly={{ x: 100, duration: 500 }}
+			out:fly={{ x: -100, duration: 500 }}
+		>
+			<button on:click={toggleVisible}><i class="fas fa-times" /></button>
+
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={() => (visible = false)}><a href="/" class:open={visible}>Home</a></li>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={() => (visible = false)}><a href="/about" class:open={visible}>About</a></li>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={() => (visible = false)}><a href="/work" class:open={visible}>Work</a></li>
+			<!-- svelte-ignore a11y-click-events-have-key-events -->
+			<li on:click={() => (visible = false)}>
+				<a href="mailto:ahmedonour.49@gmail.com">Let's Talk</a>
+			</li>
+		</ul>
 	</nav>
 </main>
 
 <style>
 	main {
-		width: 100vw;
+		width: var(--width-Scroll);
 		display: grid;
 		place-items: center;
 	}
@@ -56,6 +64,10 @@
 		font-size: 3rem;
 	}
 	nav ul {
+		display: none;
+	}
+	nav ul.open {
+		display: block;
 		width: 100vw;
 		height: calc(100vh - 100px);
 		position: absolute;
@@ -87,8 +99,32 @@
 		border: 1px solid #000;
 	}
 	@media screen and (min-width: 768px) {
-		main {
+	
+		nav {
+			width: 80vw;
+			justify-content: space-between;
+		}
+		nav button {
 			display: none;
 		}
+		nav ul {
+			display: flex;
+			position: relative;
+			width: 40vw;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			list-style: decimal-leading-zero;
+			font-size: 1.5rem;
+			font-family: var(--ff-main);
+		}
+
+		/* nav ul .left-side {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 50%;
+			margin-right: 3rem;
+		} */
 	}
 </style>

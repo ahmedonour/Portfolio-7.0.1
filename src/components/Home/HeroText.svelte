@@ -1,15 +1,25 @@
 <script>
 	import { fly } from 'svelte/transition';
-	let visible = true;
+
 </script>
 
 <main>
-	<h1 in:fly={{ y: 200, duration: 1500, delay: 1500 }}
-		out:fly={{ y: 200, duration: 1500, delay: 1500 }}>Ahmed Suliman</h1>
-	<p in:fly={{ y: 200, duration: 1500, delay: 1500 }}
-		out:fly={{ y: 200, duration: 1500, delay: 1500 }}>Front-End Developer & Designer</p>
-	<p in:fly={{ y: 200, duration: 1500, delay: 1500 }}
-		out:fly={{ y: 200, duration: 1500, delay: 1500 }}>
+	<h1
+		in:fly={{ y: 200, duration: 1500, delay: 1500 }}
+		out:fly={{ y: 200, duration: 1500, delay: 1500 }}
+	>
+		Ahmed Suliman
+	</h1>
+	<p
+		in:fly={{ y: 200, duration: 1500, delay: 1500 }}
+		out:fly={{ y: 200, duration: 1500, delay: 1500 }}
+	>
+		Front-End Developer & Designer
+	</p>
+	<p
+		in:fly={{ y: 200, duration: 1500, delay: 1500 }}
+		out:fly={{ y: 200, duration: 1500, delay: 1500 }}
+	>
 		I deliver stunning and engaging websites that captivate audiences and elevate online presence by
 		leveraging the latest technologies and best practices
 	</p>
