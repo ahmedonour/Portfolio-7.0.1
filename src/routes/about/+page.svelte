@@ -112,7 +112,7 @@
 		}
 		.me .me_img p {
 			font-size: 1.8rem;
-			font-weight: 500;
+			font-weight: 800;
 			text-align: justify;
 		}
 		.social {
