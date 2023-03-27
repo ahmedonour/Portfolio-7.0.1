@@ -1,16 +1,18 @@
 <script>
-    export let myClass;
-    export let myH1;
-    export let myP;
+	export let myClass;
+	export let myH1;
+	export let myP;
 </script>
+
 <div class={myClass}>
-    <h1>{myH1}</h1>
-    <p>
-        {myP}
-    </p>
+	<h1>{myH1}</h1>
+	<p>
+		{myP}
+	</p>
 </div>
+
 <style>
-    div {
+	div {
 		width: 78%;
 		font-family: var(--ff-main);
 		font-size: 3rem;
@@ -26,12 +28,12 @@
 		letter-spacing: 1px;
 		line-height: 1.5;
 	}
-    @media only screen and (min-width: 1024px){
-        div h1 {
+	@media only screen and (min-width: 1024px) {
+		div h1 {
 			font-size: 8rem;
 		}
 		div p {
 			font-size: 2rem;
 		}
-    }
+	}
 </style>

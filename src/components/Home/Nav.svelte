@@ -99,7 +99,6 @@
 		border: 1px solid #000;
 	}
 	@media screen and (min-width: 768px) {
-	
 		nav {
 			width: 80vw;
 			justify-content: space-between;

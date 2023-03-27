@@ -1,15 +1,17 @@
 <script>
-	import { fly } from "svelte/transition";
-	import UniText from "../../components/uni-text.svelte";
-	let Class = "about-section"
+	import { fly } from 'svelte/transition';
+	import UniText from '../../components/uni-text.svelte';
+	let Class = 'about-section';
 </script>
 
 <svelte:head>
 	<title>Ahmed Suliman | About me</title>
 	<script src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
 </svelte:head>
-<main in:fly={{ y: 200, duration: 300, delay: 500 }}
-out:fly={{ y: 200, duration: 300, delay: 500 }}>
+<main
+	in:fly={{ y: 200, duration: 300, delay: 500 }}
+	out:fly={{ y: 200, duration: 300, delay: 500 }}
+>
 	<!-- <div class="about_section">
 		<h1>About</h1>
 		<p>
@@ -19,10 +21,10 @@ out:fly={{ y: 200, duration: 300, delay: 500 }}>
 			portfolios that showcase your brand and personality.
 		</p>
 	</div> -->
-	<UniText 
-	myClass='about-section'
-	myH1="About"
-	myP="As a front end developer, my goal is to create stunning and engaging websites that will
+	<UniText
+		myClass="about-section"
+		myH1="About"
+		myP="As a front end developer, my goal is to create stunning and engaging websites that will
 	capture the attention of your audience and leave a lasting impression. With my expertise in
 	website design and development, I specialize in creating custom social media influencer
 	portfolios that showcase your brand and personality."
@@ -54,7 +56,6 @@ out:fly={{ y: 200, duration: 300, delay: 500 }}>
 
 <style>
 	main {
-        
 		width: var(--width-Scroll);
 		display: grid;
 		place-items: center;
@@ -101,7 +102,6 @@ out:fly={{ y: 200, duration: 300, delay: 500 }}>
 		margin-left: 1rem;
 	}
 	@media screen and (min-width: 1024px) {
-
 		.me .me_img {
 			flex-direction: row;
 			justify-content: center;
@@ -112,7 +112,7 @@ out:fly={{ y: 200, duration: 300, delay: 500 }}>
 		}
 		.me .me_img p {
 			font-size: 1.8rem;
-            font-weight: 500;
+			font-weight: 500;
 			text-align: justify;
 		}
 		.social {
