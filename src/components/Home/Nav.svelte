@@ -1,6 +1,7 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import Button from '../button.svelte';
 	var visible = false;
 	function toggleVisible() {
 		visible = !visible;
@@ -38,11 +39,26 @@
 			<li on:click={() => (visible = false)}>
 				<a href="mailto:ahmedonour.49@gmail.com">Let's Talk</a>
 			</li>
+			<Button>
+				Dark
+			</Button>
 		</ul>
 	</nav>
 </main>
 
 <style>
+		:global(body) {
+		/* background-color: var(--clr-SkyBlue);
+		color: var(--clr-Black); */
+		transition: all .5s ease-in-out;
+	}
+	:global(body.dark-mode) {
+		--clr-Black: #fff;
+		--clr-SkyBlue: #222222;
+		--clr-Blue: #09272b;
+		/* background-color: var(--clr-Black);
+		color: var(--clr-SkyBlue); */
+	}
 	main {
 		width: var(--width-Scroll);
 		display: grid;
@@ -131,7 +147,7 @@
 			width: 100%;
 			transform: scaleX(0);
 			height: 2px;
-			background-color: #000000;
+			background-color: var(--clr-Black);
 			transform-origin: bottom right;
 			transition: transform 0.25s ease-out;
 		}
