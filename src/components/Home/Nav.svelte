@@ -1,6 +1,5 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import { onMount } from 'svelte';
 	import Button from '../button.svelte';
 	var visible = false;
 	function toggleVisible() {
@@ -51,7 +50,7 @@
 	:global(body.dark-mode) {
 		--clr-Black: #fff;
 		--clr-SkyBlue: #222222;
-		--clr-Blue: #09272b;
+		--clr-Blue: #00515c;
 	}
 	:global(body.dark-mode) .fa-sun {
 		display: block;
@@ -62,7 +61,7 @@
 	.fa-sun {
 		display: none;
 	}
-	.fas{
+	.fas {
 		cursor: pointer;
 	}
 	main {

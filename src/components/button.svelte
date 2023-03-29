@@ -20,10 +20,4 @@
 		font-size: 2rem;
 		font-weight: 700;
 	}
-	:global(body.dark-mode) button {
-		/* background-color: #0084f6;
-            color: white; */
-		/* --clr-Black: #ffffff;
-		--clr-SkyBlue: #222222; */
-	}
 </style>
