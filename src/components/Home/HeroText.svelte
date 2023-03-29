@@ -1,5 +1,6 @@
 <script>
 	import { fly } from 'svelte/transition';
+	import SocialIcons from '../socialIcons.svelte';
 </script>
 
 <main>
@@ -22,6 +23,7 @@
 		I deliver stunning and engaging websites that captivate audiences and elevate online presence by
 		leveraging the latest technologies and best practices
 	</p>
+	<SocialIcons title="Social Media" />
 </main>
 
 <style>

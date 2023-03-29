@@ -125,5 +125,19 @@
 			width: 50%;
 			margin-right: 3rem;
 		} */
+		nav ul li::after {
+			display: block;
+			content: '';
+			width: 100%;
+			transform: scaleX(0);
+			height: 2px;
+			background-color: #000000;
+			transform-origin: bottom right;
+			transition: transform 0.25s ease-out;
+		}
+		nav ul li:hover::after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
 	}
 </style>

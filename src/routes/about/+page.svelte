@@ -1,5 +1,6 @@
 <script>
 	import { fly } from 'svelte/transition';
+	import SocialIcons from '../../components/socialIcons.svelte';
 	import UniText from '../../components/uni-text.svelte';
 	let Class = 'about-section';
 </script>
@@ -42,16 +43,8 @@
 			</p>
 		</div>
 	</div>
-	<div class="social">
-		<h1>Follow Me</h1>
-		<div class="icons">
-			<a href="https://web.facebook.com/OnodevDeveloper"><i class="fab fa-facebook" /></a>
-			<a href="https://dev.to/ahmed_onour"><i class="fab fa-dev" /></a>
-			<a href="https://medium.com/@ahmedsuliman/"><i class="fab fa-medium" /></a>
-			<a href="https://twitter.com/ahmed_onour"><i class="fab fa-twitter" /></a>
-			<a href="https://blog.ahmedsuliman.com/"><i class="fab fa-hashnode" /></a>
-		</div>
-	</div>
+
+	<SocialIcons title="Follow Me" />
 </main>
 
 <style>
@@ -88,19 +81,6 @@
 		line-height: 1.5;
 	}
 
-	.social {
-		width: 78%;
-		padding-bottom: 2rem;
-	}
-	.social h1 {
-		font-family: var(--ff-main);
-		font-size: 4rem;
-	}
-	.social a {
-		color: var(--clr-Black);
-		font-size: 2rem;
-		margin-left: 1rem;
-	}
 	@media screen and (min-width: 1024px) {
 		.me .me_img {
 			flex-direction: row;
@@ -114,12 +94,6 @@
 			font-size: 1.8rem;
 			font-weight: 800;
 			text-align: justify;
-		}
-		.social {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
 		}
 	}
 </style>

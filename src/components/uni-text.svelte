@@ -18,7 +18,7 @@
 		font-size: 3rem;
 	}
 	div h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	div p {
 		font-family: var(--ff-p);
@@ -34,7 +34,8 @@
 		}
 		div p {
 			font-size: 2rem;
-            text-align: left;font-weight: 800;
+			text-align: left;
+			font-weight: 500;
 		}
 	}
 </style>

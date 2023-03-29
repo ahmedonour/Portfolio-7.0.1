@@ -1,6 +1,7 @@
 <script>
 	import Circles from '../components/Home/Circles.svelte';
 	import HeroText from '../components/Home/HeroText.svelte';
+	import SocialIcons from '../components/socialIcons.svelte';
 </script>
 
 <svelte:head>
