@@ -62,7 +62,6 @@
 		font-family: var(--ff-main);
 		font-size: 3rem;
 		color: var(--clr-Black);
-
 	}
 	.me .me_img {
 		display: flex;
@@ -82,7 +81,6 @@
 		letter-spacing: 1px;
 		line-height: 1.5;
 		color: var(--clr-Black);
-
 	}
 
 	@media screen and (min-width: 1024px) {

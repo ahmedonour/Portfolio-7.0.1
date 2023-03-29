@@ -40,24 +40,30 @@
 				<a href="mailto:ahmedonour.49@gmail.com">Let's Talk</a>
 			</li>
 			<Button>
-				Dark
+				<i class="fas fa-sun" />
+				<i class="fas fa-moon" />
 			</Button>
 		</ul>
 	</nav>
 </main>
 
 <style>
-		:global(body) {
-		/* background-color: var(--clr-SkyBlue);
-		color: var(--clr-Black); */
-		transition: all .5s ease-in-out;
-	}
 	:global(body.dark-mode) {
 		--clr-Black: #fff;
 		--clr-SkyBlue: #222222;
 		--clr-Blue: #09272b;
-		/* background-color: var(--clr-Black);
-		color: var(--clr-SkyBlue); */
+	}
+	:global(body.dark-mode) .fa-sun {
+		display: block;
+	}
+	:global(body.dark-mode) .fa-moon {
+		display: none;
+	}
+	.fa-sun {
+		display: none;
+	}
+	.fas{
+		cursor: pointer;
 	}
 	main {
 		width: var(--width-Scroll);

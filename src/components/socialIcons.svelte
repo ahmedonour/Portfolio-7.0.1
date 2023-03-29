@@ -23,15 +23,14 @@
 		width: 78%;
 		padding-bottom: 2rem;
 		display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.social h1 {
 		font-family: var(--ff-main);
 		font-size: 3rem;
 		color: var(--clr-Black);
-
 	}
 	.social a {
 		color: var(--clr-Black);
