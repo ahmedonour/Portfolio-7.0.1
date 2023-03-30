@@ -8,6 +8,12 @@
 	--clr-Black: #000;
 	--clr-SkyBlue: #caf2ff;
 	--clr-Blue: #00b7d0;
+	/* --clr-Black: #1a0d68;
+	--clr-SkyBlue: #e6eef8;
+	
+	--clr-Blue: #e52a38; */
+
+
 
 	--width-Scroll: calc(100vw - 0.5em);
 }

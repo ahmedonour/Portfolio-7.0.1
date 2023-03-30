@@ -48,9 +48,9 @@
 
 <style>
 	:global(body.dark-mode) {
-		--clr-Black: #fff;
-		--clr-SkyBlue: #222222;
-		--clr-Blue: #00515c;
+		--clr-Black: #e4d79d;
+		--clr-SkyBlue: #132f4d;
+		--clr-Blue: #e61e33;
 	}
 	:global(body.dark-mode) .fa-sun {
 		display: block;
@@ -58,6 +58,7 @@
 	:global(body.dark-mode) .fa-moon {
 		display: none;
 	}
+
 	.fa-sun {
 		display: none;
 	}
@@ -106,6 +107,9 @@
 	nav ul li {
 		font-weight: 800;
 	}
+	nav ul li::marker {
+		color: var(--clr-Blue);
+	}	
 	nav button {
 		background: none;
 		border: none;
