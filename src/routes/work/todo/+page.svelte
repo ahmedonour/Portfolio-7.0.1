@@ -71,17 +71,20 @@
 		justify-content: center;
 		align-items: center;
         flex-wrap: wrap;
-        gap: .5rem;
+        gap: 1rem;
+        margin-bottom: 5rem;
     }
     .links{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        gap: 5rem;
     }
     .links a{
         color: var(--clr-Black);
-        padding-left: 5rem;
+        /* padding-left: 5rem; */
         font-size: 4rem;
         transition: all .5s ease-in-out;
     }
