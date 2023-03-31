@@ -37,8 +37,9 @@
 		}
 		div p {
 			font-size: 2rem;
-			text-align: left;
+			text-align: justify;
 			font-weight: 500;
+			
 		}
 	}
 </style>

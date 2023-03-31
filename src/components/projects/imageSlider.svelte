@@ -1,16 +1,8 @@
 <script>
-    export let images = [
-    //   "https://via.placeholder.com/600x400?text=Image+1",
-    //   "https://via.placeholder.com/600x400?text=Image+2",
-    //   "https://via.placeholder.com/600x400?text=Image+3",
-    //   "https://via.placeholder.com/600x400?text=Image+4"
-    // "/show1.png",
-    //   "/show2.png",
-    //   "https://via.placeholder.com/600x400?text=Image+3",
-    //   "https://via.placeholder.com/600x400?text=Image+4"
-    ];
+    export let images = [];
     let currentImageIndex = 0;
-  
+    let slideTimer = null;
+
     function nextImage() {
       currentImageIndex = (currentImageIndex + 1) % images.length;
     }
@@ -18,11 +10,42 @@
     function previousImage() {
       currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     }
+    // const SLIDE_INTERVAL = 1000; // 5 seconds
+
+// let slideTimer = setInterval(() => {
+//   nextImage();
+// }, SLIDE_INTERVAL);
+
+// $: {
+//   clearInterval(slideTimer);
+//   slideTimer = setInterval(() => {
+//     nextImage();
+//   }, SLIDE_INTERVAL);
+// }
+function startSlideShow() {
+    slideTimer = setInterval(() => {
+      nextImage();
+    }, 3000);
+  }
+
+  function stopSlideShow() {
+    clearInterval(slideTimer);
+    slideTimer = null;
+  }
+
+  startSlideShow();
   </script>
-  
-  <div class="image-slider">
+
+  <!-- svelte-ignore a11y-mouse-events-have-key-events -->
+  <div class="image-slider"
+  on:mouseover={stopSlideShow}
+  on:mouseout={startSlideShow}
+  >
     <!-- svelte-ignore a11y-img-redundant-alt -->
-    <img src={images[currentImageIndex]} alt="Slider Image" />
+    <img src={images[currentImageIndex]} alt="Slider Image" 
+    on:mouseover={stopSlideShow}
+    on:mouseout={startSlideShow}
+    />
     <div class="controls">
       <button on:click={previousImage}><i class="fas fa-arrow-left" /></button>
       <button on:click={nextImage}><i class="fas fa-arrow-right" /></button>
@@ -56,7 +79,7 @@
       display: flex;
       justify-content: center;
     }
-    .fa-arrow-left{
+    /* .fa-arrow-left{
         position: relative;
         left: -7rem;
         top: -9rem;
@@ -65,13 +88,14 @@
         position: relative;
         right: -7rem;
         top: -9rem;
-    }
+    } */
     .controls button {
-      margin: 0 10px;
+      margin: 0 5rem;
       background: transparent;
       border: none;
       font-size: 2rem;
       color: var(--clr-Black);
+      cursor: pointer;
     }
   </style>
   
