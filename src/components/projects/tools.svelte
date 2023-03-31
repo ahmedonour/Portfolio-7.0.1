@@ -19,6 +19,6 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		margin: 1rem;
+		/* margin: 1rem; */
 	}
 </style>
