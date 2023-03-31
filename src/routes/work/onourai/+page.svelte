@@ -3,6 +3,7 @@
 	import ImageAndDes from "../../../components/projects/imageAndDes.svelte";
     import ImageSlider from "../../../components/projects/imageSlider.svelte";
     import UniText from "../../../components/uni-text.svelte";
+    import Tools from "../../../components/projects/tools.svelte";
     let image = [
         "/onourai/img1.png",
         "/onourai/img2.png",
@@ -27,10 +28,17 @@
             <!-- svelte-ignore a11y-missing-attribute -->
             <ImageSlider images={image}/>
             <UniText 
-            myH1="OnourAi :"
+            myH1="OnourAi"
             myP=" OnourAi is an Arabic AI Image Generator that utilizes the SvelteKit framework, the OpenAI API, and a translating API to generate images based on user inputs. The goal of this project is to provide an easy-to-use tool for users to create customized images in the Arabic language, even if they are not fluent in Arabic themselves. The AI algorithms will generate images based on user-provided input and translate the generated text into English for the final output."
             />
-            <!-- <Tools /> -->
+
+            <h1>Tools</h1>
+            <div class="tools">
+                <Tools toolName='Figma' />
+                <Tools toolName='SvelteKit' />
+                <Tools toolName='OpenAI' />
+                <Tools toolName='TranslateAI' />
+            </div>
         </div>
     </section>
 </main>
@@ -47,5 +55,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .image h1{
+        font-size: 4rem;
+        color: var(--clr-Black);
+        font-family: var(--ff-main);
+    }
+    .tools{
+        /* width: 10%; */
+        display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
     }
 </style>
