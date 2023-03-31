@@ -22,14 +22,16 @@
 			portfolios that showcase your brand and personality.
 		</p>
 	</div> -->
-	<UniText
-		myClass="about-section"
-		myH1="About"
-		myP="As a front end developer, my goal is to create stunning and engaging websites that will
-	capture the attention of your audience and leave a lasting impression. With my expertise in
-	website design and development, I specialize in creating custom social media influencer
-	portfolios that showcase your brand and personality."
-	/>
+	<div class="me">
+		<UniText
+			myClass="about-section"
+			myH1="About"
+			myP="As a front end developer, my goal is to create stunning and engaging websites that will
+		capture the attention of your audience and leave a lasting impression. With my expertise in
+		website design and development, I specialize in creating custom social media influencer
+		portfolios that showcase your brand and personality."
+		/>
+	</div>
 	<div class="me">
 		<h1>About Me</h1>
 		<div class="me_img">

@@ -13,7 +13,7 @@
 
 <style>
 	div {
-		width: 78%;
+		width: 100%;
 		font-family: var(--ff-main);
 		font-size: 3rem;
 	}

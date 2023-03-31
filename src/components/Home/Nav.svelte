@@ -51,6 +51,7 @@
 		--clr-Black: #e4d79d;
 		--clr-SkyBlue: #132f4d;
 		--clr-Blue: #e61e33;
+		--clr-NavBG: rgba(0, 0, 0, 0.219);
 	}
 	:global(body.dark-mode) .fa-sun {
 		display: block;
@@ -96,7 +97,7 @@
 		top: 100px;
 		left: 0;
 		padding-left: 8rem;
-		background-color: rgba(0, 0, 0, 0.219);
+		background-color:var(--clr-NavBG);
 		list-style: decimal-leading-zero;
 		font-size: 3rem;
 		font-family: var(--ff-main);

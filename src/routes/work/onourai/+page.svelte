@@ -19,6 +19,7 @@
             myH1="OnourAi :"
             myP=" OnourAi is an Arabic AI Image Generator that utilizes the SvelteKit framework, the OpenAI API, and a translating API to generate images based on user inputs. The goal of this project is to provide an easy-to-use tool for users to create customized images in the Arabic language, even if they are not fluent in Arabic themselves. The AI algorithms will generate images based on user-provided input and translate the generated text into English for the final output."
             />
+            <!-- <Tools /> -->
         </div>
     </section>
 </main>

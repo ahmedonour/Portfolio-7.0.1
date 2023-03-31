@@ -12,15 +12,17 @@
 	in:fly={{ y: 200, duration: 500, delay: 300 }}
 	out:fly={{ y: 200, duration: 500, delay: 300 }}
 >
-	<UniText myH1="Work" myP="My Favorite projects" />
-	<section>
-		<LinkProjects titleOfUri="OnourAi" uri="work/onourai" />
-		<LinkProjects titleOfUri="ToDo" uri="work/todo" />
-	</section>
-	<UniText myH1="Other Projects" myP="In my GitHub" />
-	<section class="github">
-		<a href="https://github.com/ahmedonour/"><i class="fab fa-github" /></a>
-	</section>
+	<div class="me">
+		<UniText myH1="Work" myP="My Favorite projects" />
+		<section>
+			<LinkProjects titleOfUri="OnourAi" uri="work/onourai" />
+			<LinkProjects titleOfUri="ToDo" uri="work/todo" />
+		</section>
+		<UniText myH1="Other Projects" myP="In my GitHub" />
+		<section class="github">
+			<a href="https://github.com/ahmedonour/"><i class="fab fa-github" /></a>
+		</section>
+	</div>
 </main>
 
 <style>
