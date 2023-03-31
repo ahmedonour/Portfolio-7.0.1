@@ -3,7 +3,18 @@
 	import ImageAndDes from "../../../components/projects/imageAndDes.svelte";
     import ImageSlider from "../../../components/projects/imageSlider.svelte";
     import UniText from "../../../components/uni-text.svelte";
-    let image = ["/show1.png", "/show2.png"]
+    let image = [
+        "/onourai/img1.png",
+        "/onourai/img2.png",
+        "/onourai/img3.png",
+        "/onourai/img4.png",
+        "/onourai/img5.png",
+        "/onourai/img6.png",
+        "/onourai/img7.png",
+        "/onourai/img8.png",
+        "/onourai/img9.png",
+        "/onourai/img10.png",
+    ]
 
 </script>
 <svelte:head>
