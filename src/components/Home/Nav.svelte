@@ -96,7 +96,7 @@
 		top: 100px;
 		left: 0;
 		padding-left: 8rem;
-		background-color: rgba(255, 255, 255, 0.219);
+		background-color: rgba(0, 0, 0, 0.219);
 		list-style: decimal-leading-zero;
 		font-size: 3rem;
 		font-family: var(--ff-main);
@@ -116,12 +116,13 @@
 		font-size: 2rem;
 	}
 	.fa-times {
+		color: var(--clr-Black);
 		position: relative;
 		/* bottom :20px; */
 		left: -100px;
 		padding: 0.6rem 1rem;
 		border-radius: 50px;
-		border: 1px solid #000;
+		border: 1px solid var(--clr-Blue);
 	}
 	@media screen and (min-width: 1024px) {
 		nav {
