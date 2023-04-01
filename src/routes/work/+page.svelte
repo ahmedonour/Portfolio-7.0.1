@@ -13,12 +13,14 @@
 	out:fly={{ y: 200, duration: 500, delay: 300 }}
 >
 	<div class="me">
-		<UniText myH1="Work" myP="My Favorite projects" />
+		<h1>Work</h1>
+		<!-- <UniText myH1="Work" myP="My Favorite projects" /> -->
 		<section>
 			<LinkProjects titleOfUri="OnourAi" uri="work/onourai" />
 			<LinkProjects titleOfUri="ToDo" uri="work/todo" />
 		</section>
-		<UniText myH1="Other Projects" myP="In my GitHub" />
+		<h1>Other Projects</h1>
+		<!-- <UniText myH1="Other Projects" myP="In my GitHub" /> -->
 		<section class="github">
 			<a href="https://github.com/ahmedonour/"><i class="fab fa-github" /></a>
 		</section>
@@ -31,7 +33,11 @@
 		display: grid;
 		place-items: center;
 	}
-
+	h1{
+		font-size: 8rem;
+		color: var(--clr-Black);
+		font-family: var(--ff-main);
+	}
 	.fa-github {
 		color: var(--clr-Black);
 		margin-top: 2rem;
