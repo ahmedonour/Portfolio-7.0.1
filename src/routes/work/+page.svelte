@@ -34,7 +34,7 @@
 		place-items: center;
 	}
 	h1{
-		font-size: 8rem;
+		font-size: 3rem;
 		color: var(--clr-Black);
 		font-family: var(--ff-main);
 	}
@@ -58,5 +58,10 @@
 			align-items: flex-start;
 			width: 78%;
 		}
+		h1{
+		font-size: 8rem;
+		color: var(--clr-Black);
+		font-family: var(--ff-main);
+	}
 	}
 </style>
