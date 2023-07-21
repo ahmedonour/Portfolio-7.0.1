@@ -1,7 +1,7 @@
 :root {
-	--ff-main: 'Satoshi', sans-serif;
+	--ff-p: 'Satoshi', sans-serif;
 
-	--ff-p: 'Clash Display', sans-serif;
+	--ff-main: 'Clash Display', sans-serif;
 	--ff-sec: 'Plaster', cursive;
 
 	/* Color */
