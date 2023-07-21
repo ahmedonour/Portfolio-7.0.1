@@ -46,7 +46,7 @@
 	}
 	main p:nth-of-type(1) {
 		font-size: 1.2rem;
-		letter-spacing: 2px;
+		/* letter-spacing: 2px; */
 		font-weight: 500;
 	}
 	main p:nth-of-type(2) {
