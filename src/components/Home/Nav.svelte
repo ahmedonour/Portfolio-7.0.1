@@ -107,7 +107,6 @@
 	}
 	nav ul li {
 		font-weight: 400;
-		font-size: .5rem;
 	}
 	nav ul li::marker {
 		color: var(--clr-Blue);
