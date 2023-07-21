@@ -84,7 +84,7 @@
 	}
 	nav h1 {
 		font-family: var(--ff-sec);
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	nav ul {
 		display: none;
