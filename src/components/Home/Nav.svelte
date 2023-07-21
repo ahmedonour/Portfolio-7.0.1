@@ -106,7 +106,8 @@
 		z-index: 99999;
 	}
 	nav ul li {
-		font-weight: 800;
+		font-weight: 400;
+		font-size: .5rem;
 	}
 	nav ul li::marker {
 		color: var(--clr-Blue);
