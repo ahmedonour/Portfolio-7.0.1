@@ -39,15 +39,15 @@
 		font-family: var(--ff-main);
 	}
 	main h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 	main p {
-		font-weight: 700;
+		font-weight: 500;
 	}
 	main p:nth-of-type(1) {
 		font-size: 1.2rem;
 		letter-spacing: 2px;
-		font-weight: 800;
+		font-weight: 500;
 	}
 	main p:nth-of-type(2) {
 		font-size: 1rem;
