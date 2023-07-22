@@ -8,6 +8,8 @@
 	<title>Ahmed Suliman | Front-End Developer & Designer</title>
 </svelte:head>
 <main>
+<p>tiktok-developers-site-verification=YuOnsa3k1ViQ1q8T7rE3X6ERFi6QkBzm</p>
+tiktok-developers-site-verification=YuOnsa3k1ViQ1q8T7rE3X6ERFi6QkBzm
 	<HeroText />
 	<Circles />
 </main>
