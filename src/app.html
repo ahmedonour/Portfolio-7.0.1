@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href="%sveltekit.assets%/favicon-1.svg"
-			media="(prefers-color-scheme: dark)"
-		/>
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href="%sveltekit.assets%/favicon.svg"
-			media="(prefers-color-scheme: light)"
-		/>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="%sveltekit.assets%/style.css" />
-		<link
-			href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400,600,700,500&f[]=clash-display@200,400,700,500,600,300&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
 
-		<script src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+	<link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/favicon-1.svg"
+		media="(prefers-color-scheme: dark)" />
+	<link rel="icon" type="image/svg+xml" href="%sveltekit.assets%/favicon.svg" media="(prefers-color-scheme: light)" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMN2VFEZ2X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-SMN2VFEZ2X');
+	</script>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="%sveltekit.assets%/style.css" />
+	<link
+		href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400,600,700,500&f[]=clash-display@200,400,700,500,600,300&display=swap"
+		rel="stylesheet" />
+	<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/f3c7bd6f07.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Plaster&display=swap" rel="stylesheet" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
