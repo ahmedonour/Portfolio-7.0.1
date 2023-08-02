@@ -17,6 +17,7 @@
 		<!-- <UniText myH1="Work" myP="My Favorite projects" /> -->
 		<section>
 			<LinkProjects titleOfUri="OnourAi" uri="work/onourai" />
+			<LinkProjects titleOfUri="News" uri="work/newsHomepage" />
 			<LinkProjects titleOfUri="ToDo" uri="work/todo" />
 		</section>
 		<h1>Other Projects</h1>
