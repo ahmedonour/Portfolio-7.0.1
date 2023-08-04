@@ -17,7 +17,8 @@
 		<!-- <UniText myH1="Work" myP="My Favorite projects" /> -->
 		<section>
 			<LinkProjects titleOfUri="OnourAi" uri="work/onourai" />
-			<LinkProjects titleOfUri="News" uri="work/newsHomepage" />
+			<LinkProjects titleOfUri="Preview Card" uri="work/productCard" />
+			<LinkProjects titleOfUri="News Homepage" uri="work/newsHomepage" />
 			<LinkProjects titleOfUri="ToDo" uri="work/todo" />
 		</section>
 		<h1>Other Projects</h1>
@@ -57,7 +58,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: flex-start;
-			width: 78%;
+			width: 80vw;
 		}
 		h1{
 		font-size: 8rem;

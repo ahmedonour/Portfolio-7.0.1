@@ -73,7 +73,7 @@
 	}
 	nav {
 		display: flex;
-		width: 80vw;
+		width: 85vw;
 		height: 100px;
 		justify-content: space-between;
 		align-items: center;
@@ -97,7 +97,7 @@
 		top: 100px;
 		left: 0;
 		padding-left: 8rem;
-		background-color:var(--clr-NavBG);
+		background-color: var(--clr-NavBG);
 		list-style: decimal-leading-zero;
 		font-size: 3rem;
 		font-family: var(--ff-main);
@@ -110,7 +110,7 @@
 	}
 	nav ul li::marker {
 		color: var(--clr-Blue);
-	}	
+	}
 	nav button {
 		background: none;
 		border: none;
