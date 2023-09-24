@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Ahmed Suliman | Front-End Developer & Designer</title>
+	<title>Ahmed Suliman | Web Developer & Designer</title>
 </svelte:head>
 <main>
 	<HeroText />
