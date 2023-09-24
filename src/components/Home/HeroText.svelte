@@ -14,7 +14,7 @@
 		in:fly={{ y: 200, duration: 1500, delay: 1500 }}
 		out:fly={{ y: 200, duration: 1500, delay: 1500 }}
 	>
-		Front-End Developer & Designer
+		Web Developer & Designer
 	</p>
 	<p
 		in:fly={{ y: 200, duration: 1500, delay: 1500 }}
@@ -76,7 +76,7 @@
 		}
 		main p:nth-of-type(1) {
 			font-size: 2.5rem;
-			letter-spacing: 10px;
+			letter-spacing: 4px;
 		}
 		main p:nth-of-type(2) {
 			font-size: 1.5rem;
