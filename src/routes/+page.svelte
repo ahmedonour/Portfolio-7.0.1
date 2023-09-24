@@ -9,7 +9,7 @@
 </svelte:head>
 <main>
 	<HeroText />
-	<Circles />
+	<--! <Circles /> -->
 </main>
 
 <style>
