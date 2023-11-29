@@ -24,13 +24,13 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/ahmedonour/Portfolio-7.0.1.git
    ```
 
 2. Change into the project directory:
 
    ```bash
-   cd your-portfolio
+   cd Portfolio-7.0.1
    ```
 
 3. Install dependencies:
