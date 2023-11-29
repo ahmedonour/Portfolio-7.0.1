@@ -36,7 +36,7 @@
 			<li on:click={() => (visible = false)}><a href="/work" class:open={visible}>Work</a></li>
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
 			<li on:click={() => (visible = false)}>
-				<a href="mailto:ahmedonour.49@gmail.com">Let's Talk</a>
+				<a href="/contactus">Let's Talk</a>
 			</li>
 			<Button>
 				<i class="fas fa-sun" />
@@ -49,6 +49,7 @@
 <style>
 	:global(body.dark-mode) {
 		--clr-Black: #e4d79d;
+	--clr-yellow: #383838;
 		--clr-SkyBlue: #132f4d;
 		--clr-Blue: #e61e33;
 		--clr-NavBG: rgba(0, 0, 0, 0.219);
